@@ -15,7 +15,7 @@ I wrote this on a Raspberry Pi 3b+.  For Windows or Mac you will need to make sm
 - numpy  
 - python-matplotlib  
 
-- - screen (if you want to hide the background processes)
+-- screen (if you want to hide the background processes)
 - json  
 - python-requests  
 - python-flask  
