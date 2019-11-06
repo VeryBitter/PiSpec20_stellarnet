@@ -26,6 +26,7 @@ I wrote this on a Raspberry Pi 3b+.  For Windows or Mac you will need to make sm
 you would need to run as root to get USB access.
 - the rest of the files in PiSpec20_stellarnet should go into the same directory
 - Issue `sudo chmod -x spectroweb.py` in the project directory if on a Linux system 
+- use the 'run_hidden' bash script to start the project without showing the command line
 ### Other Hardware  
 - a USB connected StellarNet spectrometer  
 - a light source if you are going to do absorbance experiments
