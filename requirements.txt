@@ -1,9 +1,9 @@
-pyusb 1.0.0a3
-numpy
-python-matplotlib
-json
-python-requests
 curl
+numpy
+json
 python-flask
+python-matplotlib
+python-requests
 python-virtualenv
+pyusb 1.0.0a3
 Tkinter
