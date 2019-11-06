@@ -14,10 +14,10 @@ I wrote this on a Raspberry Pi 3b+.  For Windows or Mac you will need to make sm
 - pyusb 1.0.0a3  (Linux example:  sudo pip install pyusb==1.0.0a3)
 - numpy  
 - python-matplotlib  
+
+- - screen (if you want to hide the background processes)
 - json  
 - python-requests  
-- curl
-- screen (if you want to hide the background processes)
 - python-flask  
 - python-virtualenv  (if you want to run this in a virtual environment)
 - Tkinter  
