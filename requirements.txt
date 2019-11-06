@@ -1,6 +1,6 @@
 curl
-numpy
 json
+numpy
 python-flask
 python-matplotlib
 python-requests
