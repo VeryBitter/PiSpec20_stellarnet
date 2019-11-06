@@ -11,16 +11,16 @@ spectrometer features.  This code takes care of collecting the spectra, everythi
 ## PiSpec20 Requirements  
 I wrote this on a Raspberry Pi 3b+.  For Windows or Mac you will need to make small changes to the code to deal with OS peculiarities.  You will need to possess a Stellarnet spectrometer.
 ### Libraries  
-- pyusb 1.0.0a3  (Linux example:  sudo pip install pyusb==1.0.0a3)
+- pyusb 1.0.0a3  (Linux python 2 example:  sudo pip install pyusb==1.0.0a3)
 - numpy  
 - python-matplotlib  
-
+- stuff usually automatically included in python
   - screen (if you want to hide the background processes)
-- json  
-- python-requests  
-- python-flask  
-- python-virtualenv  (if you want to run this in a virtual environment)
-- Tkinter  
+  - json  
+  - python-requests  
+  - python-flask  
+  - python-virtualenv  (if you want to run this in a virtual environment)
+  - Tkinter  
 ### Files to install
 - 99-local.rules  needs to be copied to '/etc/udev/rules.d/' or updated to include rules for StellarNet devices.  Otherwise 
 you would need to run as root to get USB access.
