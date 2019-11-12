@@ -25,7 +25,8 @@ I wrote this on a Raspberry Pi 3b+.  For Windows or Mac you will need to make sm
 - 99-local.rules  needs to be copied to '/etc/udev/rules.d/' or updated to include rules for StellarNet devices.  Otherwise 
 you would need to run as root to get USB access.
 - the rest of the files in PiSpec20_stellarnet should go into the same directory
-- Issue `sudo chmod -x spectroweb.py` in the project directory if on a Linux system 
+- Issue `sudo chmod -x spectroweb.py` in the project directory if on a Linux system  
+- on a Windows system you will need the free 'SWDrivers.zip' or 'SWDriver64.exe' from https://www.stellarnet.us/stellarnet-downloads  instead of the driver included in this package  
 - use the 'run_hidden' bash script to start the project without showing the command line
 ### Other Hardware  
 - a USB connected StellarNet spectrometer  
