@@ -10,12 +10,14 @@ to run their spectrometer.  However, the functionality of the project can readil
 spectrometer features.  This code takes care of collecting the spectra, everything else is just manipulations in code.  Simple changes in the code shift the interface from having lots of things chosen for you to needing to make lots of choices.
 ## PiSpec20 Requirements  
 I wrote this on a Raspberry Pi 3b+.  For Windows or Mac you will need to make small changes to the code to deal with OS peculiarities.  You will need to possess a Stellarnet spectrometer.
-### Libraries  
-- pyusb 1.0.0a3  (Linux python 2 example:  `sudo pip install pyusb==1.0.0a3`)
+### Libraries 
+For Raspbian OS, the `apt-get` package manager is preferred to `pip` in most cases.  For other Linux types, the appropriate package manager (*e.g.*, yum for CentOS) will depend on your Linux distribution.   
+For Windows and MacOS, one would typically use `pip` to install Python libraries.  Help with pip is available at https://packaging.python.org/tutorials/installing-packages/  
+- pyusb 1.0.0a3  (Linux python 2 example:  `sudo pip install pyusb==1.0.0a3`)  this is version specific, so `pip` is appropriate  
 - screen (if you want to hide the background processes)
 - numpy  
 - python-matplotlib  
-- stuff usually automatically included in python
+- libraries usually automatically included in Python
   - json  
   - python-requests  
   - python-flask  
@@ -27,13 +29,12 @@ you would need to run as root to get USB access.
 - the rest of the files in PiSpec20_stellarnet should go into the same directory
 - Issue `sudo chmod -x spectroweb.py` in the project directory if on a Linux system  
 - on a Windows system you will need the free 'SWDrivers.zip' or 'SWDriver64.exe' from https://www.stellarnet.us/stellarnet-downloads  instead of the driver included in this package  
-- use the 'run_hidden' bash script to start the project without showing the command line
+- use the 'run_hidden' bash script to start the project without showing the command line.  From the command line issue `sudo chmod +x run_hidden` to make the bash script executable.  On Windows a batch file would substitute the bash script.
 ### Other Hardware  
 - a USB connected StellarNet spectrometer  
 - a light source if you are going to do absorbance experiments
 ## How to Help  
-I don't write in Python for a living, nor particularly do a lot of programming.  And it shows in the code.  This is 
-also a work in progress.  
+I don't write in Python for a living, nor particularly do a lot of programming.  And it shows in the code.  
 If you wish to contribute please contact me.
 ## License  
 Apache License 2.0.  A Stellarnet module is included under the Apache License 2.0, so the whole thing is, too.
