@@ -9,11 +9,11 @@ The project was written to support undergraduate laboratories, so really this re
 to run their spectrometer.  However, the functionality of the project can readily be expanded to take advantage of the 
 spectrometer features.  This code takes care of collecting the spectra, everything else is just manipulations in code.  Simple changes in the code shift the interface from having lots of things chosen for you to needing to make lots of choices.
 ## PiSpec20 Requirements  
-I wrote this on a Raspberry Pi 3b+.  For Windows or Mac you will need to make small changes to the code to deal with OS peculiarities.  You will need to possess a Stellarnet spectrometer.
+This branch only works on Python 3.x.  I wrote this on a Raspberry Pi 3b+.  For Windows or Mac you will need to make small changes to the code to deal with OS peculiarities.  You will need to possess a Stellarnet spectrometer.
 ### Libraries 
 For Raspbian OS, the `apt-get` package manager is preferred to `pip` in most cases.  For other Linux types, the appropriate package manager (*e.g.*, yum for CentOS) will depend on your Linux distribution.   
 For Windows and MacOS, one would typically use `pip` to install Python libraries.  Help with pip is available at https://packaging.python.org/tutorials/installing-packages/  
-- pyusb 1.0.0a3  (Linux python 2 example:  `sudo pip install pyusb==1.0.0a3`)  this is version specific, so `pip` is appropriate  
+- pyusb 1.0.0a3  (Linux python 3 example:  `sudo pip3 install pyusb==1.0.0a3`)  this is version specific, so `pip` is appropriate  
 - screen (if you want to hide the background processes)
 - numpy  
 - python-matplotlib  
