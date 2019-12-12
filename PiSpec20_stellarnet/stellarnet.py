@@ -457,7 +457,9 @@ def _load_firmware(device, filename):
             count = int(line[1:1 + 2], 16)
             if count:
                 address = int(line[3:3 + 4], 16)
-                payload = bytearray(line[9:9 + count*2].decode("hex"))
+                #payload = bytearray(line[9:9 + count*2].decode("hex"))
+                # python3 needs the line below
+                payload = bytearray.fromhex(line[9:9 + count*2])
                 device.ctrl_transfer(
                     StellarNet._OUT_DEVICE, 0xA0, address, 0, payload)
 
