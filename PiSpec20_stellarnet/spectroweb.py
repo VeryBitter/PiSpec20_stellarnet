@@ -47,7 +47,8 @@ class Spectrometers(object):
             abort(404)
 
     def get_device_ids(self):
-        return self._get_map().keys()
+        return list(self._get_map().keys())
+        # in python2 was: return self._get_map().keys()
 
 spectrometers = Spectrometers()
 
