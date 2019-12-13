@@ -33,6 +33,15 @@ you would need to run as root to get USB access.
 ### Other Hardware  
 - a USB connected StellarNet spectrometer  
 - a light source if you are going to do absorbance experiments
+## Typical Install  
+The following steps were followed to install this project on a Raspberry PI model 3B+ with a fresh Raspbian (full version) installation:  
+- `sudo apt-get install screen`  
+- `sudo pip3 install pyusb==1.0.0a3`  
+- downloaded this repository  
+- from the project directory copied the 'rules' file `sudo cp 99-local.rules /etc/udev/rules.d`  
+- change permission `sudo chmod -x spectroweb.py`  
+- `python3 spectroweb.py`  will keep this command line window busy, so open another one  
+- `python3 stellarnet_spec.py` runs the interface  
 ## How to Help  
 I don't write in Python for a living, nor particularly do a lot of programming.  And it shows in the code.  
 If you wish to contribute please contact me.
