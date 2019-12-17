@@ -12,8 +12,17 @@
 #    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
-# 
+#
 
+### edits December 2019 ECN
+#   edited to make Python 3 compatible
+#   1) 'xrange' depricated in Python 3, replaced with 'range'
+#   2) 'range' in Python 2, replaced with 'list(range(...))' to create list objects
+#   3) 'print' updated to 'print()'
+#   4) 'payload = bytearray(line[9:9 + count*2].decode("hex"))'
+#      updated for python3 to the following line
+#      'payload = bytearray.fromhex(line[9:9 + count*2])'
+###
 """
 stellarnet - StellarNet USB spectrometer support.
 
