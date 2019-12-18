@@ -13,10 +13,10 @@ Python 2.7.x is required for this version.  I wrote this on a Raspberry Pi 3b+. 
 ### Libraries 
 For Raspbian OS, the `apt-get` package manager is preferred to `pip` in most cases.  For other Linux types, the appropriate package manager (*e.g.*, yum for CentOS) will depend on your Linux distribution.   
 For Windows and MacOS, one would typically use `pip` to install Python libraries.  Help with pip is available at https://packaging.python.org/tutorials/installing-packages/  
-- pyusb 1.0.0a3  (Linux python 2 example:  `sudo pip install pyusb==1.0.0a3`)  this is version specific, so `pip` is appropriate  
+- pyusb 1.0.0a3  (Linux python 2 example:  `sudo pip install pyusb==1.0.0a3`)  this is version specific  
 - screen (if you want to hide the background processes)
 - numpy  
-- python-matplotlib  
+- python-matplotlib, recommended version: `sudo pip --no-cache-dir install matplotlit==2.0.2`    
 - libraries usually automatically included in Python
   - json  
   - python-requests  
