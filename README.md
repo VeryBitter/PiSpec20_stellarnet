@@ -42,6 +42,21 @@ The following steps were followed to install this project on a Raspberry PI mode
 - change permission `sudo chmod -x spectroweb.py`  
 - `python3 spectroweb.py`  will keep this command line window busy, so open another one  
 - `python3 stellarnet_spec.py` runs the interface  
+## Supported Devices  
+### Directly tested 
+| Manufacturer  | Spectrometer  | Works ?       |  
+| ------------- | ------------- | ------------- |  
+| StellarNet    | Black Comet   |     yes       |
+
+### Should work with StellarNet driver  
+| Spectrometer | Linux driver | Windows driver |
+| ------------ | :----------: | :------------: |
+| Blue Wave | x | x |
+| Black Comet | x | x |
+| Silver Nova | x | x |
+| High Resolution | x | x |
+| Green Wave | x | x |
+
 ## How to Help  
 I don't write in Python for a living, nor particularly do a lot of programming.  And it shows in the code.  
 If you wish to contribute please contact me.
