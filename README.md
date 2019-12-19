@@ -1,3 +1,4 @@
+*this branch only works in Python 2.7*
 # PiSpec20_stellarnet
 A Python interface for StellarNet spectrometers designed to provide the functions of a Spectronic 20 spectrophotometer
 ## Project Goals and Motivations  
@@ -33,6 +34,21 @@ you would need to run as root to get USB access.
 ### Other Hardware  
 - a USB connected StellarNet spectrometer  
 - a light source if you are going to do absorbance experiments
+## Supported Devices  
+### Directly tested 
+| Manufacturer  | Spectrometer  | Works ?       |  
+| ------------- | ------------- | ------------- |  
+| StellarNet    | Black Comet   |     yes       |
+
+### Should work with StellarNet driver  
+| Spectrometer | Linux driver | Windows driver |
+| ------------ | :----------: | :------------: |
+| Blue Wave | x | x |
+| Black Comet | x | x |
+| Silver Nova | x | x |
+| High Resolution | x | x |
+| Green Wave | x | x |
+
 ## How to Help  
 I don't write in Python for a living, nor particularly do a lot of programming.  And it shows in the code.  
 If you wish to contribute please contact me.
