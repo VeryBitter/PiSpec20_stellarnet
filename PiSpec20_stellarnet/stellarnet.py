@@ -142,7 +142,7 @@ class StellarNet(object):
     }
     
     # Maps smoothing parameter to sliding window size
-    _WINDOW_MAP = {0:0, 1:5, 2:9, 3:17, 4:33}
+    _WINDOW_MAP = {0:0, 1:6, 2:10, 3:18, 4:34}
     
     # Next auto-assigned id
     _next_auto_id = 0
@@ -414,7 +414,7 @@ class StellarNet(object):
         # Smooth middle, start indexes are inclusive, limit indexes are exclusive
         pixels = StellarNet._PIXEL_MAP[self._config['det_type']]
         dst = [0]*len(src)
-        half_span = win_span/2
+        half_span = int(win_span/2)
         src_start = half_span
         src_limit = pixels - half_span
         win_start = 0
